@@ -1,0 +1,362 @@
+body {
+    margin: 0px;
+    font-family: 'Courier New', monospace;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.haward_header ul,ul {
+
+    list-style: none;
+}
+
+.haward_header ul li {
+
+    display: inline;
+}
+
+.haward_header ul:nth-child(1) {
+    float: left;
+}
+
+.haward_header ul:nth-child(2) {
+    float: right;
+}
+
+.haward_header li {
+    margin-right: 40px;
+}
+
+
+.haward_header nav {
+    overflow: auto;
+}
+
+
+
+.haward_header.darkmode {
+
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 12px 0px;
+    font-size: 18px;
+
+}
+
+.haward_main_content {
+    background-image: url('./images/pexels-felix-mittermeier-956999.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.haward_main_content h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 2.5rem;
+}
+
+.haward_welcome {
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 100%; */
+    /* left: 44%; */
+    /* top: 41%; */
+    /* right: 0%; */
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    position: absolute;
+    /* left: 0; */
+    /* transform: translate(53%, 100%);*/
+}
+
+.haward_project_section{
+    background-color: white;
+    color: black;
+    padding: 30px 0px 80px 0px;
+
+}
+
+.haward_skills_section{
+    padding: 30px 0px 80px 0px;
+
+}
+
+.haward_project_section .project_heading,
+.haward_skills_section .skill_heading {
+    text-align: center;
+
+}
+
+.haward_project_section .project_heading h2,
+.haward_skills_section .skill_heading h2 {
+    font-size: 29px;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+/* .haward_projects,
+.haward_skill_collection .skills {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+} */
+
+.projects {
+    border: 1px solid white;
+}
+
+.checked {
+    color: white;
+}
+
+
+
+.haward_skill_collection label {
+    color: white;
+}
+
+.haward_skills_section  {
+    background-color: rgba(32,31,31,.9411764706);
+}
+
+.project_1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+
+.project_image {
+    width: 284px;
+}
+
+.skills_image{
+    width: 150px !important;
+}
+
+.project_image img, .skills_image img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.haward_projects{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+
+.showmore,.showless {
+    color: white;
+    text-align: center;
+    background-color: #0e0e0e;
+    padding: 20px 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* .showall{
+    display: none;
+}
+
+.showless{
+    display: none;
+} */
+
+/* .skills{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:50px
+} */
+
+.haward_skills{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.skills_heading{
+    color: white;
+}
+
+.skill_heading h2 {
+    color: white;
+}
+
+
+.skills_heading h3{
+    font-size: 25px;
+}
+
+.slick-prev {
+    left: 6px !important;
+    z-index: 10000;
+}
+
+
+.slick-next {
+    right: 12px !important;
+}
+
+.skills_image{
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+}
+
+.skills_rating div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.d-nonetoblock{
+    display:none;
+}
+
+.d-blocktonone{
+    display: block;
+}
+
+.mobilemenu{
+    
+       display: none;
+    
+} 
+.skills {
+    
+    padding: 0px 34px;
+
+}
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before{
+    padding-right: 10px; 
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+@media screen and (max-width: 1024px) {
+    .haward_projects 
+     {
+      width: 100% !important;
+    }
+
+    .d-nonetoblock{
+        display: block;
+    }
+
+    .d-blocktonone{
+        display: none;
+    }
+
+    .project_1{
+        display: block;
+    }
+
+    .haward_projects{
+        text-align: center;
+    }
+
+    .project_image{
+        margin: 0 auto;
+    }
+
+    .project_image{
+        width: 190px;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .project_1{
+        display: block;
+    }
+
+    .haward_projects{
+        text-align: center;
+    }
+
+    .project_image{
+        margin: 0 auto;
+    }
+
+    .skills_image{
+        display: block !important;
+        margin: 0 auto;
+    }
+
+    .skills_rating div{
+        display: block;
+    }
+
+    .skills{
+        text-align: center;
+    }
+   
+
+}
+
+@media screen and (max-width: 618px) {
+  
+    .desktopmenu{
+        display: none;
+    }
+   .mobilemenu{
+    display: block;
+   }
+
+   .haward_header.darkmode {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 12px 0px;
+    font-size: 24px;
+}
+}
